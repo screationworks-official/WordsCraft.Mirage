@@ -76,3 +76,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if(Math.random() > 0.86) makeShootingStar();
   }, 2000);
 });
+// 🌟 Scroll-triggered fade-ins
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.2,
+  rootMargin: "0px 0px -50px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    appearOnScroll.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => appearOnScroll.observe(fader));
+
+// 🌌 Floating sparkles background
+function createSparkles() {
+  const sparkle = document.createElement("div");
+  sparkle.classList.add("sparkle");
+  sparkle.style.left = Math.random() * 100 + "vw";
+  sparkle.style.animationDuration = (Math.random() * 6 + 4) + "s";
+  sparkle.style.opacity = Math.random();
+  document.body.appendChild(sparkle);
+  setTimeout(() => sparkle.remove(), 8000);
+}
+setInterval(createSparkles, 250);
+
