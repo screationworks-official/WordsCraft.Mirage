@@ -1,45 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SF10 FFA – Season 1 | WordsCraft.Mirage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superfriendly 10: Five Friends Adventure — Season 1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      overflow-x: hidden;
+    }
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=10" />
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #ffdf6c;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #c2c9ff;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #dcdcdc;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: #ffdf6c;
+      color: #000;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a.back-btn:hover {
+      background: #fff;
+      transform: translateY(-2px);
+    }
+
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .stars::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      box-shadow: 0 0 1px 1px white;
+      animation: twinkle 2s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
 </head>
-<body class="fade-in">
+<body>
+  <div class="stars"></div>
 
-  <header>
-    <h1>SuperFriendly 10 — <span style="color:#c084fc;">Five Friends Adventure</span></h1>
-    <p>The beginning of everything — where five hearts met destiny.</p>
-  </header>
+  <h1>Superfriendly 10: Five Friends Adventure</h1>
+  <h2>Season 1 — Where It All Began</h2>
 
-  <section>
-    <img src="https://placehold.co/900x400?text=Five+Friends+Adventure" alt="SF10 FFA Season 1" style="width:90%;max-width:900px;border-radius:20px;margin:2rem 0;">
-    <h2>The Story</h2>
-    <p style="max-width:800px;margin:auto;">
-      <strong>Five souls. One spark.</strong>  
-      James, Jenny, George, Shally, and Chase — five ordinary friends stumble into a world that feels just a little too alive.
-      The story begins in the town of Willowmere, where childhood dreams meet the first signs of destiny.
-      Bonds are tested, and the thin veil between reality and magic starts to shimmer.
-    </p>
+  <p>
+    A friendship forged in the laughter of childhood. A promise made under an ordinary sun.  
+    <b>James, Shally, Jenny, George, and Chase</b> — five souls intertwined by fate,  
+    unaware that the world they knew was but a whisper of something far greater.  
+  </p>
 
-    <h2>Key Themes</h2>
-    <ul style="list-style:none;margin-top:1rem;">
-      <li> Friendship and Loyalty</li>
-      <li> Courage and Curiosity</li>
-      <li> The First Touch of Magic</li>
-    </ul>
+  <p>
+    Through laughter, quarrels, and the trials of growing up, their bond is tested —  
+    until one day, reality cracks open and reveals a spark of the extraordinary.  
+    Season 1 sets the stage for the legend of *Superfriendly 10* —  
+    the home where hearts learn to heal and powers begin to awaken.
+  </p>
 
-    <h2>Status</h2>
-    <p><span class="coming-soon">Available Now</span></p>
-
-    <a href="index.html#series" class="btn" style="margin-top:2rem;">← Back to Series</a>
-  </section>
-
-  <footer>
-    <p>© 2025 WordsCraft.Mirage — Screation_Works</p>
-  </footer>
+  <a href="index.html" class="back-btn">⬅ Back to Mirage Home</a>
 </body>
 </html>
