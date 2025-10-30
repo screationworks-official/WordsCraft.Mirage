@@ -5,39 +5,46 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>WordsCraft.Mirage — Screation_Works</title>
 
+  <!-- SEO + Meta -->
+  <meta name="description" content="WordsCraft.Mirage — where reality meets reverie. A poetic home for stories by Screation_Works.">
+  <meta name="theme-color" content="#0d0713" />
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Theme stylesheet (versioned to bust cache) -->
-  <link rel="stylesheet" href="style.css?v=9">
-
-  <meta name="theme-color" content="#0d0713" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
+
 <body>
 
-  <!-- Floating star canvas (controlled in script.js) -->
+  <!-- Floating star canvas (animated background layer) -->
   <div id="star-layer" aria-hidden="true"></div>
 
-  <!-- Header / Nav -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-row">
       <div class="brand">
         <a href="#home" class="brand-link">WordsCraft.<span class="mirage">Mirage</span></a>
         <div class="byline">by <strong>Screation_Works</strong></div>
       </div>
-      <nav class="main-nav">
+
+      <nav class="main-nav" id="mainNav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#novels">Novels</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <button id="menuToggle" class="menu-toggle" aria-label="toggle menu">☰</button>
     </div>
   </header>
 
-  <!-- Hero / Portal -->
+  <!-- MAIN -->
   <main>
+
+    <!-- HERO -->
     <section id="home" class="hero">
       <div class="hero-inner container">
         <div class="hero-copy">
@@ -50,8 +57,7 @@
         </div>
 
         <div class="hero-art" aria-hidden="true">
-          <!-- decorative SVG quill + book -->
-          <svg class="hero-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <svg class="hero-svg" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
             <defs>
               <linearGradient id="g1" x1="0" x2="1">
                 <stop offset="0%" stop-color="#f8d57e"/>
@@ -72,93 +78,91 @@
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT -->
     <section id="about" class="about">
       <div class="container about-card">
         <h2>Meet the Storyteller</h2>
         <p class="lead">A dreamer weaving reality with whispers of magic. Screation_Works crafts worlds where everyday things are quietly enchanted — and the ordinary becomes extraordinary.</p>
-        <p class="small">Read behind-the-scenes notes, fragments, and poetic fragments in the Writer’s Quill.</p>
+        <p class="small">Peek behind the curtains — in the Writer’s Quill — for drafts, reflections, and poetic fragments that shaped the tales.</p>
       </div>
     </section>
 
-  <!-- SF10 Series Section -->
-<section id="series" class="series-section">
-  <h2>SuperFriendly 10 Saga</h2>
-  <p class="series-intro">
-    From friendship and fire to magic and heart — the saga continues across realms and generations.
-  </p>
-
-  <div class="series-container">
-    <div class="series-card ffa-s1">
-      <h3>SF10 FFA – Season 1</h3>
-      <p>Five Friends Adventure — where friendship is forged, and the spark of destiny ignites.</p>
-    </div>
-
-    <div class="series-card ffa-s2">
-      <h3>SF10 FFA – Season 2</h3>
-      <p>The Journey Deepens — bonds are tested, hearts awaken, and magic begins to breathe.</p>
-    </div>
-
-    <div class="series-card eh-s3">
-      <h3>SF10 EH – Season 3</h3>
-      <p>Enchanted Hearts — a new generation rises, carrying echoes of the past and dreams of the beyond.</p>
-    </div>
-  </div>
-</section>
-
-    <!-- Gallery -->
-    <section id="gallery" class="gallery">
+    <!-- NOVELS / SF10 SERIES -->
+    <section id="novels" class="series-section">
       <div class="container">
-        <h2 class="section-title">Reflections</h2>
-        <div class="gallery-grid">
-          <figure class="gallery-item"><img src="https://placehold.co/640x400?text=Concept+Art" alt=""></figure>
-          <figure class="gallery-item"><img src="https://placehold.co/640x400?text=Character+Sketch" alt=""></figure>
-          <figure class="gallery-item"><video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video></figure>
+        <h2>SuperFriendly 10 Saga</h2>
+        <p class="series-intro">
+          From friendship and fire to magic and heart — the saga continues across realms and generations.
+        </p>
+
+        <div class="series-container">
+          <div class="series-card ffa-s1">
+            <h3>SF10 FFA — Season 1</h3>
+            <p>Five Friends Adventure — where friendship is forged, and the spark of destiny ignites.</p>
+          </div>
+
+          <div class="series-card ffa-s2">
+            <h3>SF10 FFA — Season 2</h3>
+            <p>The Journey Deepens — bonds are tested, hearts awaken, and magic begins to breathe.</p>
+          </div>
+
+          <div class="series-card eh-s3">
+            <h3>SF10 EH — Season 3</h3>
+            <p>Enchanted Hearts — a new generation rises, carrying echoes of the past and dreams of the beyond.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact (Google Form) -->
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Reflections</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="https://placehold.co/640x400?text=Concept+Art" alt="Concept Art from WordsCraft Mirage" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://placehold.co/640x400?text=Character+Sketch" alt="Character Sketch from SF10" />
+          </figure>
+          <figure class="gallery-item">
+            <video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title">Echoes to the Author</h2>
-        <p class="lead">Questions, collaboration offers, or rights enquiries — your message arrives straight to the author.</p>
+        <p class="lead">Questions, collaborations, or rights enquiries — your message arrives straight to the author.</p>
 
         <div class="google-form-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGf7An_r6Q26Z35WogvEtHP7DU3xi1d3_dUK8oSRMa0JZImg/viewform?embedded=true"
-                  width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0" loading="lazy" style="border-radius:18px;">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeGf7An_r6Q26Z35WogvEtHP7DU3xi1d3_dUK8oSRMa0JZImg/viewform?embedded=true"
+            width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0"
+            loading="lazy" style="border-radius:18px;">
             Loading…
           </iframe>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-row">
       <div class="copy">© <span id="year"></span> WordsCraft.Mirage — Screation_Works</div>
       <div class="socials">
         <a href="https://www.instagram.com/screations_works.official_" target="_blank" rel="noopener">Instagram</a>
         <a href="https://wa.me/9833321208" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://mail.google.com/mail/?view=cm&tf=1&to=wordscraftmirage.official@gmail.com&su=Enquiry%20from%20site" target="_blank" rel="noopener">Email</a>
+        <a href="mailto:wordscraftmirage.official@gmail.com" target="_blank" rel="noopener">Email</a>
       </div>
     </div>
   </footer>
-  <section id="about" class="fade-in">
-  ...
-</section>
 
-<section id="novels" class="fade-in">
-  ...
-</section>
-
-<section id="gallery" class="fade-in">
-  ...
-</section>
-
-  <script src="script.js"></script>
+  <!-- SCRIPT -->
+  <script src="script.js?v=2"></script>
 </body>
 </html>
-
