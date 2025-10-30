@@ -105,4 +105,28 @@ function createSparkles() {
   setTimeout(() => sparkle.remove(), 8000);
 }
 setInterval(createSparkles, 250);
+// === MODAL FUNCTIONALITY ===
+const openButtons = document.querySelectorAll('.open-modal');
+const modals = document.querySelectorAll('.modal');
+const closes = document.querySelectorAll('.close');
+
+openButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.getAttribute('data-modal');
+    document.getElementById(`modal-${target}`).style.display = 'flex';
+  });
+});
+
+closes.forEach(c => {
+  c.addEventListener('click', () => {
+    c.parentElement.parentElement.style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+  }
+});
+
 
