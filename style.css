@@ -198,3 +198,60 @@ body{
   background: linear-gradient(135deg, #41295a, #2f0743);
 }
 
+/* ✨ Magical Animations & Effects ✨ */
+
+/* Smooth scroll fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Shimmering title animation */
+.hero h2 {
+  background: linear-gradient(90deg, #f8d57e, #e9a7ff, #f8d57e);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating sparkle background */
+@keyframes sparkle {
+  from { transform: translateY(0) rotate(0); opacity: 1; }
+  to { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+.sparkle {
+  position: fixed;
+  top: 100%;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #f8d57e 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkle 8s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Floating & glowing novel cards */
+.novel-card {
+  transition: all 0.5s ease-in-out;
+}
+
+.novel-card:hover {
+  box-shadow: 0 15px 45px rgba(248, 213, 126, 0.5);
+  transform: translateY(-10px) scale(1.05);
+}
