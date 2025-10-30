@@ -383,4 +383,54 @@ footer .socials a:hover {
   object-fit: cover;
   border-radius: 10px;
 }
+/* === STARRY BACKGROUND ANIMATION === */
+body {
+  background: radial-gradient(circle at bottom, #050505, #000);
+  overflow-x: hidden;
+  color: #fff;
+  position: relative;
+}
+
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  animation: moveStars 200s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 10000px; }
+}
+/* === SECTION SPACING & FLOW === */
+section {
+  padding: 100px 0;
+}
+
+.about-section, .author-note, .upcoming-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-section h2,
+.author-note h2,
+.upcoming-section h2 {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.author-note p {
+  line-height: 1.7;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
