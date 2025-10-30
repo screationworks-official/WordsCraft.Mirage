@@ -78,41 +78,148 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about">
-      <div class="container about-card">
-        <h2>Meet the Storyteller</h2>
-        <p class="lead">A dreamer weaving reality with whispers of magic. Screation_Works crafts worlds where everyday things are quietly enchanted — and the ordinary becomes extraordinary.</p>
-        <p class="small">Peek behind the curtains — in the Writer’s Quill — for drafts, reflections, and poetic fragments that shaped the tales.</p>
-      </div>
-    </section>
+   <!-- ABOUT THE AUTHORS -->
+<section id="about" class="about fade-in">
+  <div class="container about-wrapper">
+    <h2 class="section-title">About the Authors</h2>
 
-    <!-- NOVELS / SF10 SERIES -->
-    <section id="novels" class="series-section">
-      <div class="container">
-        <h2>SuperFriendly 10 Saga</h2>
-        <p class="series-intro">
-          From friendship and fire to magic and heart — the saga continues across realms and generations.
+    <div class="authors-grid">
+      <!-- Shreya -->
+      <div class="author-card">
+        <img src="https://placehold.co/400x400?text=Shreya+R.G.+Kanade" alt="Shreya R. G. Kanade" class="author-img" />
+        <h3 class="author-name">Shreya R. G. Kanade</h3>
+        <p class="author-desc">
+          Born in Maharashtra, India (2008) — Shreya is the author of 
+          <em>MayFalls</em> (2023) and creator of <strong>SuperFriendly10</strong>. 
+          A poet, lyricist, and storyteller of magical realism, 
+          she studies <strong>Management & Digital Marketing</strong> at 
+          Seth Hirachand Mutha College, with dreams of pursuing Law.  
+          Her words drift between reality and reverie — where emotion becomes eternity.
         </p>
-
-        <div class="series-container">
-          <div class="series-card ffa-s1">
-            <h3>SF10 FFA — Season 1</h3>
-            <p>Five Friends Adventure — where friendship is forged, and the spark of destiny ignites.</p>
-          </div>
-
-          <div class="series-card ffa-s2">
-            <h3>SF10 FFA — Season 2</h3>
-            <p>The Journey Deepens — bonds are tested, hearts awaken, and magic begins to breathe.</p>
-          </div>
-
-          <div class="series-card eh-s3">
-            <h3>SF10 EH — Season 3</h3>
-            <p>Enchanted Hearts — a new generation rises, carrying echoes of the past and dreams of the beyond.</p>
-          </div>
-        </div>
       </div>
-    </section>
+
+      <!-- Shruti -->
+      <div class="author-card">
+        <img src="https://placehold.co/400x400?text=Shruti+G.+Kanade" alt="Shruti G. Kanade" class="author-img" />
+        <h3 class="author-name">Shruti G. Kanade</h3>
+        <p class="author-desc">
+          Born in Maharashtra, India (2010) — Shruti is a poetess and 
+          co-author of the <strong>SuperFriendly10</strong> saga.  
+          With a heart tuned to romance and emotion, 
+          she turns feelings into verses that linger like echoes.  
+          Together with her sister, she builds worlds spun from heartbeats and hope.
+        </p>
+      </div>
+    </div>
+
+    <div class="authors-note">
+      <h3 class="note-title">Author’s Note</h3>
+      <p class="note-text">
+        Two hearts, one dream — to breathe life into ink.  
+        From <em>WordsCraft.Mirage</em> flows a realm where stories shimmer,  
+        and friendship, love, and fate entwine like constellations.  
+        Every word you read — a whisper of something eternal.  
+      </p>
+    </div>
+
+    <div class="upcoming-books">
+      <h3 class="section-subtitle">Upcoming Works</h3>
+      <ul class="book-list">
+        <li>SuperFriendly10: Five Friends Adventure – Season 2</li>
+        <li>SuperFriendly10: Enchanted Hearts – Season 3</li>
+        <li>SuperFriendly10: Enchanted Hearts – Season 4</li>
+        <li>SuperFriendly10: Enchanted Hearts – Season 5</li>
+        <li>11Heavens: Crossroads of Fates</li>
+        <li>Horizon of Verses: Where the Ink Never Ends</li>
+      </ul>
+    </div>
+
+    <div class="readers-note">
+      <p>
+        The first spark has only just been lit.  
+        <em>Five Friends Adventure – Season 1</em> was merely the prologue.  
+        The journey of James, Jenny, George, Shally, and Chase  
+        is still unfolding — and the best is yet to come.  
+        <strong>Stay tuned, dreamer.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SF10 SERIES SECTION -->
+<section id="series" class="series-section fade-in">
+  <div class="container">
+    <h2>SuperFriendly 10 Saga</h2>
+    <p class="series-intro">
+      From friendship and fire to magic and heart — the saga continues across realms and generations.
+    </p>
+
+    <div class="series-container">
+      <!-- Season 1 -->
+      <div class="series-card" data-series="s1">
+        <h3>SF10 FFA – Season 1</h3>
+        <p>Five Friends Adventure — where friendship is forged, and the spark of destiny ignites.</p>
+        <button class="btn btn-light open-modal" data-modal="s1">Read More</button>
+      </div>
+
+      <!-- Season 2 -->
+      <div class="series-card" data-series="s2">
+        <h3>SF10 FFA – Season 2</h3>
+        <p>The Journey Deepens — bonds are tested, hearts awaken, and magic begins to breathe.</p>
+        <button class="btn btn-light open-modal" data-modal="s2">Read More</button>
+      </div>
+
+      <!-- Season 3 -->
+      <div class="series-card" data-series="s3">
+        <h3>SF10 EH – Season 3</h3>
+        <p>Enchanted Hearts — a new generation rises, carrying echoes of the past and dreams of the beyond.</p>
+        <button class="btn btn-light open-modal" data-modal="s3">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODALS -->
+<div class="modal" id="modal-s1">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>SF10 FFA — Season 1</h2>
+    <img src="https://placehold.co/800x450?text=Five+Friends+Adventure" alt="SF10 FFA S1" class="modal-img">
+    <p>
+      The story of five young souls — James, Jenny, George, Shally, and Chase — who find friendship
+      in the middle of chaos. Secrets of their past begin to unfold, and magic slowly creeps into
+      their world, one heartbeat at a time.
+    </p>
+    <span class="coming-soon">Available Now</span>
+  </div>
+</div>
+
+<div class="modal" id="modal-s2">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>SF10 FFA — Season 2</h2>
+    <img src="https://placehold.co/800x450?text=The+Journey+Deepens" alt="SF10 FFA S2" class="modal-img">
+    <p>
+      The adventure grows darker and deeper. Love and destiny intertwine as the five friends face
+      forces beyond imagination — testing trust, truth, and time itself.
+    </p>
+    <span class="coming-soon">Coming Soon</span>
+  </div>
+</div>
+
+<div class="modal" id="modal-s3">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>SF10 EH — Season 3</h2>
+    <img src="https://placehold.co/800x450?text=Enchanted+Hearts" alt="SF10 EH S3" class="modal-img">
+    <p>
+      A new dawn, a new generation. The legacy of SuperFriendly10 lives on through the children of
+      magic and memory — a saga of hearts bound across lifetimes.
+    </p>
+    <span class="coming-soon">In Writing</span>
+  </div>
+</div>
 
     <!-- GALLERY -->
     <section id="gallery" class="gallery">
