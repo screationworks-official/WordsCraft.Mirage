@@ -1,100 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordsCraft Mirage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WordsCraft.Mirage — Screation_Works</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Theme stylesheet (versioned to bust cache) -->
+  <link rel="stylesheet" href="style.css?v=9">
+
+  <meta name="theme-color" content="#0d0713" />
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h1>WordsCraft Mirage</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#novels">Novels</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
+  <!-- Floating star canvas (controlled in script.js) -->
+  <div id="star-layer" aria-hidden="true"></div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <div class="brand">
+        <a href="#home" class="brand-link">WordsCraft.<span class="mirage">Mirage</span></a>
+        <div class="byline">by <strong>Screation_Works</strong></div>
+      </div>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#novels">Novels</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero / Portal -->
+  <main>
     <section id="home" class="hero">
-        <h2>Welcome to the Realm of Words</h2>
-        <p>Stories woven with imagination, emotion, and magic — by Screation Works.</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About WordsCraft Mirage</h2>
-        <p>WordsCraft Mirage is a writer’s universe — blending magical realism, adventure, and heartfelt emotion. 
-        Every creation here is a reflection of passion, truth, and wonder.</p>
-    </section>
-
-    <!-- Novels Section -->
-    <section id="novels">
-        <h2>Our Novels</h2>
-        <div class="novel-list">
-            <div class="novel-card">
-                <h3><a href="five-friends.html">SuperFriendly 10: Five Friends Adventure</a></h3>
-                <p>A thrilling journey of friendship and mystery.</p>
-            </div>
-            <div class="novel-card">
-                <h3><a href="enchanted-hearts.html">SuperFriendly 10: Enchanted Hearts</a></h3>
-                <p>The saga continues with deeper bonds and hidden powers.</p>
-            </div>
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1 class="site-title">WordsCraft.<span class="mirage">Mirage</span></h1>
+          <p class="tagline">Where reality meets reverie — stories that breathe like living things.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#novels">Discover the Chronicles</a>
+            <a class="btn btn-ghost" href="#about">Meet the Author</a>
+          </div>
         </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <img src="https://placehold.co/300x200" alt="Novel image 1">
-            <img src="https://placehold.co/300x200" alt="Novel image 2">
-            <video controls width="300">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="hero-art" aria-hidden="true">
+          <!-- decorative SVG quill + book -->
+          <svg class="hero-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="#f8d57e"/>
+                <stop offset="100%" stop-color="#e5c1ff"/>
+              </linearGradient>
+              <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="6" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#blurGlow)">
+              <path d="M60 330 C 180 210, 360 200, 540 80" stroke="url(#g1)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.9"/>
+              <circle cx="520" cy="90" r="6" fill="#fff"/>
+              <circle cx="500" cy="60" r="3.5" fill="#f8d57e"/>
+            </g>
+          </svg>
         </div>
+      </div>
     </section>
 
-    
-   <!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <p>Have a question, collaboration idea, or just want to say hi? Fill out the form below — we’d love to hear from you!</p>
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about-card">
+        <h2>Meet the Storyteller</h2>
+        <p class="lead">A dreamer weaving reality with whispers of magic. Screation_Works crafts worlds where everyday things are quietly enchanted — and the ordinary becomes extraordinary.</p>
+        <p class="small">Read behind-the-scenes notes, fragments, and poetic fragments in the Writer’s Quill.</p>
+      </div>
+    </section>
 
-  <div class="google-form-container">
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeGf7An_r6Q26Z35WogvEtHP7DU3xi1d3_dUK8oSRMa0JZImg/viewform?embedded=true" 
-      width="100%" 
-      height="1566" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0"
-      style="border-radius: 20px;">
-      Loading…
-    </iframe>
-  </div>
-</section>
-    
-   <!-- Footer -->
-<footer>
-  <p>© 2025 WordsCraft Mirage | Created by Screation Works</p>
-  <div class="socials">
-    <a href="https://www.instagram.com/screations_works.official_" target="_blank">Instagram</a> |
-    <a href="https://wa.me/9833321208" target="_blank">WhatsApp</a> |
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=wordscraftmirage.official@gmail.com&su=Enquiry%20from%20WordsCraft%20Mirage%20Website" 
-   target="_blank" 
-   rel="noopener noreferrer">
-   Email
-</a>
-  </div>
-</footer>
+    <!-- Novels -->
+    <section id="novels" class="novels">
+      <div class="container">
+        <h2 class="section-title">The Chronicles</h2>
+        <div class="novel-grid">
+          <article class="novel-card" data-fade>
+            <img src="https://placehold.co/360x520?text=Book+Cover" alt="SuperFriendly10 cover" class="book-cover">
+            <h3><a href="five-friends.html">SuperFriendly 10 — Five Friends Adventure</a></h3>
+            <p>A tale of five friends whose small town secrets fold into myths and maps to other worlds.</p>
+            <a class="cta-link" href="five-friends.html">Read details →</a>
+          </article>
 
+          <article class="novel-card" data-fade>
+            <img src="https://placehold.co/360x520?text=Book+Cover" alt="Enchanted Hearts cover" class="book-cover">
+            <h3><a href="enchanted-hearts.html">Enchanted Hearts — Season Two</a></h3>
+            <p>When hearts remember magic, consequences bloom. Season Two explores the deepening ties and inevitable choices.</p>
+            <a class="cta-link" href="enchanted-hearts.html">Read details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Reflections</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item"><img src="https://placehold.co/640x400?text=Concept+Art" alt=""></figure>
+          <figure class="gallery-item"><img src="https://placehold.co/640x400?text=Character+Sketch" alt=""></figure>
+          <figure class="gallery-item"><video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (Google Form) -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Echoes to the Author</h2>
+        <p class="lead">Questions, collaboration offers, or rights enquiries — your message arrives straight to the author.</p>
+
+        <div class="google-form-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGf7An_r6Q26Z35WogvEtHP7DU3xi1d3_dUK8oSRMa0JZImg/viewform?embedded=true"
+                  width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0" loading="lazy" style="border-radius:18px;">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="copy">© <span id="year"></span> WordsCraft.Mirage — Screation_Works</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/screations_works.official_" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/9833321208" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://mail.google.com/mail/?view=cm&tf=1&to=wordscraftmirage.official@gmail.com&su=Enquiry%20from%20site" target="_blank" rel="noopener">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
