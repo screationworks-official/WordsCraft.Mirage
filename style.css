@@ -115,3 +115,41 @@ footer .socials a {
     color: #ffb400;
     text-decoration: none;
 }
+
+/* Contact Section Styling */
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8efff, #fff0f6);
+  color: #2c1a47;
+  border-top: 2px solid rgba(68, 36, 94, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2.4em;
+  margin-bottom: 15px;
+  font-family: "Georgia", serif;
+  color: #4a2671;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  color: #5a4b6d;
+  margin-bottom: 35px;
+}
+
+.google-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffffb0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.google-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
