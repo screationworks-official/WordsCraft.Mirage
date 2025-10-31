@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap");
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(ellipse at bottom, #0b1026 0%, #000 100%);
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* 🌠 HEADER */
+.main-header {
+  text-align: center;
+  padding: 30px 10px;
+  position: relative;
+}
+.main-header .logo {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  border-radius: 10px;
+}
+.main-header h1 {
+  font-family: "Cinzel", serif;
+  color: #f4e4ff;
+  font-size: 2rem;
+  text-shadow: 0 0 15px #c0a0ff;
+}
+.main-nav {
+  margin-top: 15px;
+}
+.main-nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.main-nav a:hover {
+  color: #b388ff;
+  text-shadow: 0 0 8px #b388ff;
+}
+
+/* 🌌 Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #cbb4ff;
+  margin-bottom: 25px;
+}
+section p {
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+/* 🌸 Authors */
+.author-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.author {
+  max-width: 300px;
+}
+.author img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+.author h3 {
+  margin-top: 15px;
+  color: #ffd6ff;
+}
+
+/* 🪩 Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.gallery-grid img,
+.gallery-grid video {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+.gallery-grid img:hover,
+.gallery-grid video:hover {
+  transform: scale(1.05);
+}
+
+/* 💫 Contact */
+.contact-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #cbb4ff;
+  transition: 0.3s;
+}
+.contact-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #cbb4ff;
+}
+
+/* 🌟 Stars */
+.star {
+  position: fixed;
+  background: radial-gradient(circle, #fff, #cbb4ff);
+  border-radius: 50%;
+  animation: twinkle 5s infinite;
+  opacity: 0.5;
+}
+@keyframes twinkle {
+  0%,100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* 🌠 Fade Animation */
+[data-fade] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+[data-fade].in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
