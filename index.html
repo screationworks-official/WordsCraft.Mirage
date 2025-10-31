@@ -1,264 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WordsCraft.Mirage — Screation_Works</title>
-
-  <!-- SEO + Meta -->
-  <meta name="description" content="WordsCraft.Mirage — where reality meets reverie. A poetic home for stories by Screation_Works.">
-  <meta name="theme-color" content="#0d0713" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=10">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordsCraft Mirage | By Shreya & Shruti</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-<div class="stars"></div>
+  <div id="star-layer"></div>
 
-  <!-- Floating star canvas (animated background layer) -->
-  <div id="star-layer" aria-hidden="true"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container nav-row">
-      <div class="brand">
-        <a href="#home" class="brand-link">WordsCraft.<span class="mirage">Mirage</span></a>
-        <div class="byline">by <strong>Screation_Works</strong></div>
-      </div>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#novels">Novels</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button id="menuToggle" class="menu-toggle" aria-label="toggle menu">☰</button>
-    </div>
+  <header class="main-header">
+    <img src="media/logo.jpg" alt="WordsCraft Mirage Logo" class="logo" />
+    <h1>WordsCraft Mirage</h1>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#authors">Authors</a>
+      <a href="#note">Author’s Note</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- MAIN -->
-  <main>
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-inner container">
-        <div class="hero-copy">
-          <h1 class="site-title">WordsCraft.<span class="mirage">Mirage</span></h1>
-          <p class="tagline">Where reality meets reverie — stories that breathe like living things.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="#novels">Discover the Chronicles</a>
-            <a class="btn btn-ghost" href="#about">Meet the Author</a>
-          </div>
-        </div>
-
-        <div class="hero-art" aria-hidden="true">
-          <svg class="hero-svg" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0%" stop-color="#f8d57e"/>
-                <stop offset="100%" stop-color="#e5c1ff"/>
-              </linearGradient>
-              <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="6" result="b"/>
-                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-            <g filter="url(#blurGlow)">
-              <path d="M60 330 C 180 210, 360 200, 540 80" stroke="url(#g1)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.9"/>
-              <circle cx="520" cy="90" r="6" fill="#fff"/>
-              <circle cx="500" cy="60" r="3.5" fill="#f8d57e"/>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-   <!-- ABOUT THE AUTHORS -->
-<section id="about" class="about fade-in">
-  <div class="container about-wrapper">
-    <h2 class="section-title">About the Authors</h2>
-
-    <div class="authors-grid">
-      <!-- Shreya -->
-      <div class="author-card">
-        <img src="https://placehold.co/400x400?text=Shreya+R.G.+Kanade" alt="Shreya R. G. Kanade" class="author-img" />
-        <h3 class="author-name">Shreya R. G. Kanade</h3>
-        <p class="author-desc">
-          Born in Maharashtra, India (2008) — Shreya is the author of 
-          <em>MayFalls</em> (2023) and creator of <strong>SuperFriendly10</strong>. 
-          A poet, lyricist, and storyteller of magical realism, 
-          she studies <strong>Management & Digital Marketing</strong> at 
-          Seth Hirachand Mutha College, with dreams of pursuing Law.  
-          Her words drift between reality and reverie — where emotion becomes eternity.
-        </p>
-      </div>
-
-      <!-- Shruti -->
-      <div class="author-card">
-        <img src="https://placehold.co/400x400?text=Shruti+G.+Kanade" alt="Shruti G. Kanade" class="author-img" />
-        <h3 class="author-name">Shruti G. Kanade</h3>
-        <p class="author-desc">
-          Born in Maharashtra, India (2010) — Shruti is a poetess and 
-          co-author of the <strong>SuperFriendly10</strong> saga.  
-          With a heart tuned to romance and emotion, 
-          she turns feelings into verses that linger like echoes.  
-          Together with her sister, she builds worlds spun from heartbeats and hope.
-        </p>
-      </div>
-    </div>
-
-    <div class="authors-note">
-      <h3 class="note-title">Author’s Note</h3>
-      <p class="note-text">
-        Two hearts, one dream — to breathe life into ink.  
-        From <em>WordsCraft.Mirage</em> flows a realm where stories shimmer,  
-        and friendship, love, and fate entwine like constellations.  
-        Every word you read — a whisper of something eternal.  
-      </p>
-    </div>
-
-    <div class="upcoming-books">
-      <h3 class="section-subtitle">Upcoming Works</h3>
-      <ul class="book-list">
-        <li>SuperFriendly10: Five Friends Adventure – Season 2</li>
-        <li>SuperFriendly10: Enchanted Hearts – Season 3</li>
-        <li>SuperFriendly10: Enchanted Hearts – Season 4</li>
-        <li>SuperFriendly10: Enchanted Hearts – Season 5</li>
-        <li>11Heavens: Crossroads of Fates</li>
-        <li>Horizon of Verses: Where the Ink Never Ends</li>
-      </ul>
-    </div>
-
-    <div class="readers-note">
-      <p>
-        The first spark has only just been lit.  
-        <em>Five Friends Adventure – Season 1</em> was merely the prologue.  
-        The journey of James, Jenny, George, Shally, and Chase  
-        is still unfolding — and the best is yet to come.  
-        <strong>Stay tuned, dreamer.</strong>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SF10 SERIES SECTION -->
-<section id="series" class="series-section fade-in">
-  <div class="container">
-    <h2>SuperFriendly 10 Saga</h2>
-    <p class="series-intro">
-      From friendship and fire to magic and heart — the saga continues across realms and generations.
+  <section id="about" data-fade>
+    <h2>About the Mirage</h2>
+    <p>
+      <b>WordsCraft Mirage</b> is not just a website — it’s a constellation of stories, 
+      emotions, and the quiet music of creation. It’s where verses shimmer like 
+      distant stars and tales unfold like the galaxy’s secrets.
     </p>
+  </section>
 
-    <div class="series-container">
-      <!-- Season 1 -->
-      <div class="series-card">
-        <h3>SF10 FFA – Season 1</h3>
-        <p>Five Friends Adventure — where friendship is forged, and the spark of destiny ignites.</p>
-        <a href="sf10-ffa-s1.html" target="_blank" class="btn btn-light">Read More</a>
+  <section id="authors" data-fade>
+    <h2>The Authors</h2>
+    <div class="author-container">
+      <div class="author">
+        <img src="media/author-shreya.jpg" alt="Shreya - The Poetess with the Rose" />
+        <h3>Shreya</h3>
+        <p>The dreamer with the rose. Her words bloom in the hush between starlight and silence.</p>
       </div>
-
-      <!-- Season 2 -->
-      <div class="series-card">
-        <h3>SF10 FFA – Season 2</h3>
-        <p>The Journey Deepens — bonds are tested, hearts awaken, and magic begins to breathe.</p>
-        <a href="sf10-ffa-s2.html" target="_blank" class="btn btn-light">Read More</a>
-      </div>
-
-      <!-- Season 3 -->
-      <div class="series-card">
-        <h3>SF10 EH – Season 3</h3>
-        <p>Enchanted Hearts — a new generation rises, carrying echoes of the past and dreams of the beyond.</p>
-        <a href="sf10-eh-s3.html" target="_blank" class="btn btn-light">Read More</a>
+      <div class="author">
+        <img src="media/author-shruti.jpg" alt="Shruti - The Storyweaver in Green" />
+        <h3>Shruti</h3>
+        <p>The storyteller in green. She paints worlds with logic, laughter, and a little lunacy.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section id="note" data-fade>
+    <h2>Author’s Note</h2>
+    <p>
+      A story begins not when the pen touches paper,  
+      but when a soul dares to listen to its own echoes.  
+      <br><br>
+      To every reader wandering through this Mirage —  
+      may you find a fragment of yourself in our verses.  
+      <br>— Shreya & Shruti 🌙
+    </p>
+  </section>
 
-   <!-- GALLERY SECTION -->
-<section id="gallery" class="gallery-section fade-in">
-  <div class="container">
-    <h2>Moments & Magic</h2>
-    <p class="gallery-intro">A glimpse into the world of SuperFriendly10 — frames, fragments, and feelings.</p>
-
+  <section id="gallery" data-fade>
+    <h2>The Mirage Gallery</h2>
     <div class="gallery-grid">
-      <!-- Image 1 -->
-      <div class="gallery-item">
-        <img src="https://placehold.co/600x400?text=The+Five+Friends" alt="The Five Friends">
-      </div>
-
-      <!-- Image 2 -->
-      <div class="gallery-item">
-        <img src="https://placehold.co/600x400?text=Magic+Awakens" alt="Magic Awakens">
-      </div>
-
-      <!-- Image 3 (Video) -->
-      <div class="gallery-item video">
-        <video controls poster="https://placehold.co/600x400?text=Trailer+Preview">
-          <source src="https://cdn.pixabay.com/vimeo/355872548/forest-19109.mp4?width=1280&hash=96a8f4d12f915d7ad6eacb645a930b2a65e39b3a" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Image 4 -->
-      <div class="gallery-item">
-        <img src="https://placehold.co/600x400?text=The+Legacy+Continues" alt="The Legacy Continues">
-      </div>
-
-      <!-- Image 5 (Video) -->
-      <div class="gallery-item video">
-        <video controls poster="https://placehold.co/600x400?text=Behind+The+Scenes">
-          <source src="https://cdn.pixabay.com/vimeo/239818313/cinema-12517.mp4?width=1280&hash=1e64e3b8b2a935f07dfc679b56cb32a66e9d692b" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Image 6 -->
-      <div class="gallery-item">
-        <img src="https://placehold.co/600x400?text=Enchanted+Hearts" alt="Enchanted Hearts">
-      </div>
+      <img src="media/gallery1.jpg" alt="Gallery Image 1">
+      <img src="media/gallery2.jpg" alt="Gallery Image 2">
+      <img src="media/gallery3.jpg" alt="Gallery Image 3">
+      <img src="media/gallery4.jpg" alt="Gallery Image 4">
+      <video controls loop autoplay muted>
+        <source src="media/gallery-video.mp4" type="video/mp4">
+      </video>
     </div>
-  </div>
-</section>
+  </section>
 
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Echoes to the Author</h2>
-        <p class="lead">Questions, collaborations, or rights enquiries — your message arrives straight to the author.</p>
-
-        <div class="google-form-container">
-          <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeGf7An_r6Q26Z35WogvEtHP7DU3xi1d3_dUK8oSRMa0JZImg/viewform?embedded=true"
-            width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0"
-            loading="lazy" style="border-radius:18px;">
-            Loading…
-          </iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <div class="copy">© <span id="year"></span> WordsCraft.Mirage — Screation_Works</div>
-      <div class="socials">
-        <a href="https://www.instagram.com/screations_works.official_" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://wa.me/9833321208" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="mailto:wordscraftmirage.official@gmail.com" target="_blank" rel="noopener">Email</a>
-      </div>
+  <section id="contact" data-fade>
+    <h2>Contact the Authors</h2>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">Email</a>
+      <a href="https://wa.me/yourwhatsapplink">WhatsApp</a>
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
     </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> WordsCraft Mirage — A Creation by Shreya & Shruti</p>
   </footer>
 
-  <!-- SCRIPT -->
-  <script src="script.js?v=2"></script>
+  <audio id="bg-music" autoplay loop>
+    <source src="https://suno.com/s/zXcBhr1hpo23rZK3" type="audio/mpeg" />
+  </audio>
 </body>
 </html>
