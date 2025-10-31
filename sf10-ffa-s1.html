@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superfriendly 10: Five Friends Adventure — Season 1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #ffdf6c;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #c2c9ff;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #dcdcdc;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: #ffdf6c;
+      color: #000;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a.back-btn:hover {
+      background: #fff;
+      transform: translateY(-2px);
+    }
+
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .stars::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      box-shadow: 0 0 1px 1px white;
+      animation: twinkle 2s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <h1>Superfriendly 10: Five Friends Adventure</h1>
+  <h2>Season 1 — Where It All Began</h2>
+
+  <p>
+    A friendship forged in the laughter of childhood. A promise made under an ordinary sun.  
+    <b>James, Shally, Jenny, George, and Chase</b> — five souls intertwined by fate,  
+    unaware that the world they knew was but a whisper of something far greater.  
+  </p>
+
+  <p>
+    Through laughter, quarrels, and the trials of growing up, their bond is tested —  
+    until one day, reality cracks open and reveals a spark of the extraordinary.  
+    Season 1 sets the stage for the legend of Superfriendly 10 —  
+    the home where hearts learn to heal and powers begin to awaken.
+  </p>
+
+  <a href="index.html" class="back-btn">⬅ Back to Mirage Home</a>
+</body>
+</html>
